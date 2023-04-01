@@ -15,7 +15,7 @@ public class ArrayTESTING {
 			System.out.println("Number "+a+" is: "+arr[i]);
 		}
 		
-		// Array List
+		// Array Listt
 		System.out.println();
 		// Create a list
 		ArrayList<String>  list = new ArrayList<String>();

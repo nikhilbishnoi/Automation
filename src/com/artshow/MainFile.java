@@ -6,6 +6,9 @@ public class MainFile {
 		// TODO Auto-generated method stub
 		Login login = new Login();
 		login.validCredential();
+//		Thread.sleep(3000);
+//		login.invalidCredential();
+//		login.blankCredential();
 		
 	}
 
