@@ -2,26 +2,29 @@ package com.artshow;
 
 import java.util.ArrayList;
 
+
+
 public class MainFile {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {		
 		
 		ArrayList<Testcase> testCasesList = new ArrayList<>();
 		
 		// Objects
 		Login login = new Login(testCasesList);
-		forgotPassword reset = new forgotPassword(testCasesList);
+//		forgotPassword reset = new forgotPassword(testCasesList);
 		
 		
 		
 		//Login
-//		login.validCredential();
-//		login.invalidCredential();
-//		login.blankCredential();
-		
-		//Forgot Password
-		reset.blankEmail();
-		reset.invalidEmail();
+		login.validCredential();
+		login.invalidCredential();
+		login.blankCredential();
+//		
+//		//Forgot Password
+//		reset.blankEmail();
+//		reset.invalidEmail();
+		System.out.println();
 		printTestCasesResult(testCasesList);
 	}
 	public static  void printTestCasesResult(ArrayList<Testcase> testCasesList) {
@@ -34,10 +37,10 @@ public class MainFile {
 				failureCount++;
 			System.out.println(testCaseObject.getName() + ": " + testCaseObject.getStatus());
 		}
+		System.out.println();
 		System.out.println("Total Test Case Execute: " + testCasesList.size());
 		System.out.println("Total Test Case Pass: " + successCount);
 		System.out.println("Total Test Case Fail: " + failureCount);
-
-	}
-
+		}
 }
+
